@@ -21,9 +21,13 @@ namespace ICTWebAPIEnd.ProxyDataRepository
         public IAPIItemReportDataRepository Report { get; }
         public IAPIBaseDataRepositoryItem Consumer { get; }
         public IAPISystemRoutines System { get; }
+        public IAPIMap Map { get; }
         public IAPITele Tele { get; }
     }
 
+    public interface IAPIMap : IAPIBaseDataRepositoryItem
+    {
+    }
     public interface IAPITele
     {
         public IAPITeleObject Object { get; }

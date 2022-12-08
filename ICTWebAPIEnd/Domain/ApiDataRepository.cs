@@ -29,6 +29,7 @@ namespace ICTWebAPIEnd.ProxyDataRepository
             this.ObjectTree = new ICTAPIObjectTreeDataRepository(Repository);
             this.ScheduleEngine = new ICTAPIScheduleDataEngineDataRepository(Repository);
             this.Tele = new ICTAPITeleItemDataRepository(Repository);
+            this.Map = new ICTAPIMapDataRepository(Repository);
         }
         public IAPIScheduleDataEngine ScheduleEngine { get; }
         public IAPIDataRepositoryItem Region { get; }
@@ -43,6 +44,7 @@ namespace ICTWebAPIEnd.ProxyDataRepository
         public IAPIBaseDataRepositoryItem Consumer { get; }
         public IAPISystemRoutines System { get; }
         public IAPITele Tele { get; }
+        public IAPIMap Map { get; }
     }
 
     public class APICRUDDataRepositoryItem : IAPIDataRepositoryItem
