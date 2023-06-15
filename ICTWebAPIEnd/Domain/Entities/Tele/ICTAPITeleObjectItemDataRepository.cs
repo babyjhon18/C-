@@ -37,13 +37,13 @@ namespace ICTWebAPIEnd.Domain.Entities.Tele
                         signal = new
                         {
                             name = row["TagDesc"].ToString(),
-                            type = Convert.ToInt32(row["TagType"])
+                            type = row["TagType"].ToString(),
                         },
                         TimeStamp = row["TimeStamp"].ToString(),
                         VALUE = row["VALUE"].ToString(),
-                        Quality = Convert.ToInt32(row["Quality"]),
-                        LowestLevel = row["LowestLevel"].ToString(),
-                        HighestLevel = row["HighestLevel"].ToString(),
+                        Quality = row["Quality"].ToString(),
+                        LowestLevel = row["LowestLevel"].Equals(DBNull.Value) ? Convert.ToInt32(row["LowestLevel"]) : 0,
+                        HighestLevel = row["HighestLevel"].Equals(DBNull.Value) ? Convert.ToInt32(row["HighestLevel"]) : 0,
                         AlarmMessageLowest = row["AlarmMessageLowest"].ToString(),
                         AlarmMessageHighest = row["AlarmMessageHighest"].ToString(),
                     });

@@ -124,5 +124,14 @@ namespace ICTWebAPIEnd.ProxyDataRepository
             throw new NotImplementedException();
         }
 
+        public object View<T>(T dataItem, UserAccountClass CurrentUser)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<T> ViewAll<T>(List<T> List, UserAccountClass CurrentUser)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

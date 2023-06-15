@@ -46,6 +46,10 @@ namespace ICTWebAPI.Controllers
             {
                 return Forbid();
             }
+            if (!person.APIAccessable)
+            {
+                return Forbid();
+            }
             var host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (var ip in host.AddressList)
             {
