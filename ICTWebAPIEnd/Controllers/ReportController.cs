@@ -54,5 +54,16 @@ namespace ICTWebAPIEnd.Controllers
             return Status(ApiRepository.Report.View("ictweb5.Domain.Reports.Water.LocationFlatWaterTotalDataReportSQLDataRepositoryClass",
                 ControllerContext.HttpContext.Request.Query, CurrentUser));
         }
+
+        //example for get:https://localhost:44398/api/Report/Gas/LocationGasCurrentReport?locationsID=1273&archiveType=1&dateFrom=2021-10-23T00:00:00&toDate=2021-10-29T00:00:00
+        [HttpGet]
+        [Route("Gas/LocationGasCurrentReport")]
+        [ICTAPIMultiplePolicysAuthorize("UserIsAdmin;Report.ictweb5.Domain.Reports.Gas.LocationGasCurrentReportSQLDataRepositoryClass")]
+        public object LocationGasCurrentReport(string regionsID = "", string locationsID = "", string objectsID = "",
+            int archiveType = 0, string dateFrom = "", string toDate = "")
+        {
+            return Status(ApiRepository.Report.View("ictweb5.Domain.Reports.Gas.LocationGasCurrentReportSQLDataRepositoryClass",
+                ControllerContext.HttpContext.Request.Query, CurrentUser));
+        }
     }
 }

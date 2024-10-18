@@ -103,7 +103,7 @@ namespace ICTWebAPIEnd.ProxyDataRepository.Entities
                 if (objects.Count() != 0)
                 {
                     var obj = new List<object>();
-                    obj.Add(repository.Object.View(new CommonObjectClass() { ID = Convert.ToInt32(Params["objectID"]) }));
+                    obj.Add(repository.Object.View(new CommonObjectClass() { ID = Convert.ToInt32(Params["objectID"]) }, user));
                     return obj;
                 }
             }

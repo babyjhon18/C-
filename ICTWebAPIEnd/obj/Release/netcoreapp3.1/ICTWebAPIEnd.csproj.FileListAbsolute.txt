@@ -162,3 +162,4 @@ C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\staticwebassets\msb
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.RazorTargetAssemblyInfo.cache
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.csproj.CopyComplete
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.genruntimeconfig.cache
+C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.sourcelink.json

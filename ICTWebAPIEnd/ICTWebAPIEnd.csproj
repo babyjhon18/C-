@@ -17,7 +17,7 @@
 
   <ItemGroup>
     <Reference Include="ictweb5">
-      <HintPath>..\..\ICTWEB5.1\bin\ictweb5.dll</HintPath>
+      <HintPath>..\..\ICTWEB5.3\bin\ictweb5.dll</HintPath>
     </Reference>
   </ItemGroup>
 

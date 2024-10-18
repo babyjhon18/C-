@@ -19,7 +19,7 @@ namespace ICTWebAPIEnd.Controllers
         
         [HttpGet]
         [ICTAPIMultiplePolicysAuthorize("UserIsAdmin;Map.Index")]
-        public object Get(int locationID = 0, int counterID = 0)
+        public object Get(int region = 0, int locationID = 0, int objectID = 0)
         {
             return Status(ApiRepository.Map.View(new EntityClass(),
                 ControllerContext.HttpContext.Request.Query, CurrentUser));

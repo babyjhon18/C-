@@ -42,10 +42,10 @@ namespace ICTWebAPIEnd.Domain.Entities.Tele
                         TimeStamp = row["TimeStamp"].ToString(),
                         VALUE = row["VALUE"].ToString(),
                         Quality = row["Quality"].ToString(),
-                        LowestLevel = row["LowestLevel"].Equals(DBNull.Value) ? Convert.ToInt32(row["LowestLevel"]) : 0,
-                        HighestLevel = row["HighestLevel"].Equals(DBNull.Value) ? Convert.ToInt32(row["HighestLevel"]) : 0,
-                        AlarmMessageLowest = row["AlarmMessageLowest"].ToString(),
-                        AlarmMessageHighest = row["AlarmMessageHighest"].ToString(),
+                        LowestLevel = row["LowestLevel"].Equals(DBNull.Value) ? null : Convert.ToDouble(row["LowestLevel"]) as object,
+                        HighestLevel = row["HighestLevel"].Equals(DBNull.Value) ? null : Convert.ToDouble(row["HighestLevel"]) as object,
+                        AlarmMessageLowest = row["AlarmMessageLowest"].Equals(DBNull.Value) ? "" : row["AlarmMessageLowest"].ToString(),
+                        AlarmMessageHighest = row["AlarmMessageHighest"].Equals(DBNull.Value) ? "" : row["AlarmMessageHighest"].ToString(),
                     });
                 }
                 return ObjectData;

@@ -63,9 +63,9 @@ namespace ICTWebAPIEnd.ProxyDataRepository.Entities
             CounterClass counter = dataItem as CounterClass;
             counter.ID = Convert.ToInt32(Params["counterID"]);
             if (counter.ID == -1)
-                return repository.Counter.View(counter);
+                return repository.Counter.View(counter, user);
             if (repository.User.HasAccess(user, counter))
-                return repository.Counter.View(counter);
+                return repository.Counter.View(counter, user);
             return default(Object);
         }
     }

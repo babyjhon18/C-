@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ICTWebAPIEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df9e09b10be9209ec444b30487f2dd9c102a3c93")]
 [assembly: System.Reflection.AssemblyProductAttribute("ICTWebAPIEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ICTWebAPIEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

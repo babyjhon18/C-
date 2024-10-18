@@ -17,8 +17,9 @@ namespace ICTWebAPIEnd.ViewModels
                 List<Object> rowData = new List<Object>();
                 foreach (DataColumn column in report.Data.Columns)
                 {
-                    if (!report.SkipColumns.Contains(column.ColumnName))
+                    if (column.ColumnName == "ObjectID" || column.ColumnName == "CounterID" || !report.SkipColumns.Contains(column.ColumnName))
                     {
+
                         rowData.Add(new
                         {
                             Name = column.ColumnName,

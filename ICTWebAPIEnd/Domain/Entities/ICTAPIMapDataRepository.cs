@@ -24,8 +24,8 @@ namespace ICTWebAPIEnd.Domain.Entities
             {
                 if(repository.User.HasAccess(user, new CommonObjectClass() { ID = Convert.ToInt32(Params["objectID"]) }))
                 {
-                    var obj = repository.Object.View(new BaseObjectClass() 
-                        { ID = Convert.ToInt32(Params["objectID"]) }) as ObjectViewClass;
+                    var obj = repository.Object.View(new CommonObjectClass() 
+                        { ID = Convert.ToInt32(Params["objectID"]) }, user) as ObjectViewClass;
                     var mapObject = repository.Map.View(new BaseObjectClass() { ID = Convert.ToInt32(Params["objectID"]) });
                     return new
                     {
