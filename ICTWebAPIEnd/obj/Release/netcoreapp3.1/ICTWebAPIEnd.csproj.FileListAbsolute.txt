@@ -160,6 +160,6 @@ C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\staticwebassets\msb
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.ICTWebAPIEnd.props
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.ICTWebAPIEnd.props
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.RazorTargetAssemblyInfo.cache
-C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.csproj.CopyComplete
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.genruntimeconfig.cache
 C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAPIEnd.sourcelink.json
+C:\Projects\ICTWEBAPI\ICTWebAPIEnd\obj\Release\netcoreapp3.1\ICTWebAP.1A230D20.Up2Date

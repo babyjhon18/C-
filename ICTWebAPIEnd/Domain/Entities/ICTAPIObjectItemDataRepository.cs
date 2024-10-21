@@ -90,7 +90,7 @@ namespace ICTWebAPIEnd.ProxyDataRepository.Entities
             if (Convert.ToInt32(Params["objectID"]) == -1)
             {
                 var obj = new List<object>();
-                obj.Add(repository.Object.View(new CommonObjectClass() { ID = -1 }));
+                obj.Add(repository.Object.View(new CommonObjectClass() { ID = -1 }, user));
                 return obj;
             }
             if (Params.ContainsKey("regionID"))
